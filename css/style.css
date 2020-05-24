@@ -2,38 +2,72 @@
 	margin:0;
 	padding:0;
 }
+
 .header{
- background-color: lightblue;
  display:grid;
- grid-template-columns: 100%;
- grid-template-rows:0.4fr 1fr;
+ grid-template-rows:0.4fr 1fr 4fr;
 }
 .header-contacts{
-	margin-top:1em;
+	background-color: lightblue;
+	padding-top:1em;
 	padding-left: 18%;
 }
 .header-logo{
 	margin-right: 500px;
 }
 .header-nav{
-
 	padding-left: 18%;
 	background-color: black;
 	display: grid;
-	grid-template-columns: 1fr 2fr ;
+	grid-template-columns: 1fr 2fr;
+	
 	grid-gap:0.5em;
 }
-
+.header-button{
+	background-color: lightgray;
+	padding-top:2em;
+	
+}
+.button1 {
+  margin-left:18%;
+  position: relative;
+  display: inline-block;
+  font-size: 90%;
+  font-weight: 700;
+  color: rgb(209,209,217);
+  text-decoration: none;
+  text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+  padding: .5em 1em;
+  outline: none;
+  border-radius: 3px;
+  background: black;
+  box-shadow:
+   0 1px rgba(255,255,255,.2) inset,
+   0 3px 5px rgba(0,1,6,.5),
+   0 0 1px 1px rgba(0,1,6,.2);
+  transition: .2s ease-in-out;
+}
+.button1:hover:not(:active) {
+  background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);
+}
+.button1:active {
+  top: 1px;
+  background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+  box-shadow:
+   0 0 1px rgba(0,0,0,.5) inset,
+   0 2px 3px rgba(0,0,0,.5) inset,
+   0 1px 1px rgba(255,255,255,.1);
+}
 
 .header-nav_linking{
 	grid-gap: 2em;
 	margin-right: 500px;
 	display:grid;
-	grid-template-columns: 0.5fr 0.6fr 3fr;
+	grid-template-columns: 0.5fr 0.6fr;
 	margin-top:2.5em;
 	margin-bottom: 2.5em;
 }
-@media(max-width:40em){
+@media(max-width:60em){
     .header-logo{
         margin-right:5px;
     }
