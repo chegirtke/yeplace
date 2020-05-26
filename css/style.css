@@ -5,7 +5,7 @@
 
 .header{
  display:grid;
- grid-template-rows:0.4fr 1fr 4fr;
+ grid-template-rows:0.4fr 1fr 3fr;
 }
 .header-contacts{
 	background-color: lightblue;
@@ -20,15 +20,13 @@
 	background-color: black;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
-	
 	grid-gap:0.5em;
 }
 .header-button{
-	background-color: lightgray;
-	padding-top:2em;
-	
+  background-color: gray;
 }
 .button1 {
+  margin-top: 2em;
   margin-left:18%;
   position: relative;
   display: inline-block;
@@ -71,7 +69,17 @@
     .header-logo{
         margin-right:5px;
     }
+    .header{
+ grid-template-rows:1fr 3fr;
 }
+.header-contacts{
+display:none;}
+.header-nav{
+  padding-left: 10%;
+  grid-gap:0.5em;}
+.button1{
+  margin-left:10%;
+  }}
 .header-nav_link{
  color:lightblue;
 	text-decoration: none;
@@ -86,4 +94,15 @@
     100%{
         color:red;
     }
+}
+.price{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+}
+.new-price{
+background-color:pink;
+
+}
+.old-price{
+background-color: lightblue;
 }
