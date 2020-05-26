@@ -95,14 +95,4 @@ display:none;}
         color:red;
     }
 }
-.price{
-  display: grid;
-  grid-template-columns:1fr 1fr;
-}
-.new-price{
-background-color:pink;
 
-}
-.old-price{
-background-color: lightblue;
-}
